@@ -1,0 +1,11 @@
+function uniteUnique(...arr) {
+  return [...new Set([].concat(...arr))]
+  
+  /* "Set objects are collections of values. You can iterate through the elements of a set in insertion order. 
+  A value in the Set may only occur once; it is UNIQUE in the Set's collection."
+  This function creates a new data set from the unique values of a flattened version of the input array ([].concat(...arr))
+  and returns it as a new array.
+  */ 
+}
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
